@@ -7,33 +7,37 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.4; 
             margin: 0;
-            padding: 20px;
+            padding: 18px; 
             max-width: 900px;
             margin: 0 auto;
+            font-size: 11pt;
         }
         h1 {
             text-align: center;
-            margin-bottom: 5px;
+            margin-bottom: 5px; 
             border-bottom: 2px solid black;
-            padding-bottom: 10px;
+            padding-bottom: 7px; 
+            font-size: 20pt;
         }
         .contact-info {
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 14px;
+            margin-bottom: 15px; 
+            font-size: 10pt;
         }
         .section-title {
             border-bottom: 1px solid black;
             text-transform: uppercase;
             font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
+            margin-top: 15px; 
+            margin-bottom: 7px; 
+            padding-bottom: 3px; 
+            font-size: 11pt;
         }
         .experience-item, .education-item, .project-item {
-            margin-bottom: 15px;
+            margin-bottom: 10px; 
+            margin-top: 10px; 
         }
         .institution {
             font-weight: bold;
@@ -50,28 +54,62 @@
             float: right;
         }
         ul {
-            margin-top: 5px;
-            margin-bottom: 10px;
+            margin-top: 4px; 
+            margin-bottom: 6px; 
+            padding-left: 22px; 
+        }
+        li {
+            margin-bottom: 3px; 
+        }
+        ul ul {
+            margin-top: 2px; 
+            margin-bottom: 2px; 
         }
         .clear {
             clear: both;
         }
         .profile-picture {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
         .profile-picture img {
             width: 150px;
             height: auto;
             border-radius: 5px;
         }
+        
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .skills-column {
+            width: 48%;
+        }
+        
+        p {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        
+        .contact-line {
+            margin: 1px 0;
+            line-height: 1.3;
+        }
+        
+        .tools {
+            font-style: italic;
+            font-size: 10pt;
+            margin-top: 1px;
+            margin-bottom: 4px;
+            margin-left: 22px;
+        }
     </style>
 </head>
 <body>
     <h1>Ravialdy Hidayat</h1>
     <div class="contact-info">
-        Case De Parco Apartment • Tangerang Regency • ravialdyhidayat@gmail.com • (+62) 852 1301 4477 <br>
-        • Linkedin: <a href="https://www.linkedin.com/in/ravialdy-hidayat-a617a8156/">https://www.linkedin.com/in/ravialdy-hidayat-a617a8156/</a>
+        <p class="contact-line">Case De Parco Apartment • Tangerang Regency • ravialdyhidayat@gmail.com • (+62) 852 1301 4477</p>
+        <p class="contact-line">• <a href="https://www.linkedin.com/in/ravialdy-hidayat-a617a8156/">linkedin.com/in/ravialdy-hidayat-a617a8156/</a></p>
     </div>
 
     <div class="section-title">SUMMARY</div>
@@ -79,54 +117,26 @@
         I am a professional having 3+ year experiences in building and deploying ML/AI models, data analysis, and statistical modeling. I co-led a team that developed and tested deep learning detection & tracking models for analyzing the safety of heavy vehicles, achieving high accuracy and automation. I hold a bachelor's degree in statistics from Universitas Indonesia and have experiences in Python, Java, C++, PySpark, PyTorch, etc. I am really passionate about applying AI to solve real-world problems and advancing the field of machine learning.
     </p>
 
-    <div class="section-title">EDUCATION</div>
-    <div class="education-item">
-        <div class="institution">UNIVERSITAS INDONESIA</div>
-        <div class="location">Sep 2018 - June 2022</div>
-        <div class="clear"></div>
-        <p>
-            Best university in Indonesia #QS World University and Times Higher Education (THE) 2025 Rankings.<br>
-            Statistics, Year 2018. Final GPA 3.52/4.00 (Top 10%, Cumlaude).<br>
-            Relevant Coursework: Data Mining, Probability and Statistics, Regression Analysis, etc.
-        </p>
-    </div>
-    <div class="education-item">
-        <div class="institution">BANGKIT ACADEMY LED BY GOOGLE, GOJEK, TOKOPEDIA, AND TRAVELOKA</div>
-        <div class="location">Jan 2021 - June 2021</div>
-        <div class="clear"></div>
-        <ul>
-            <li>Machine Learning Path. Grade "A" 93.88/100.</li>
-            <li>Certified Google Tensorflow Developer.</li>
-            <li>Relevant tools: Python, Tensorflow, OpenCV, Tesseract, Javascript.</li>
-        </ul>
-    </div>
-
     <div class="section-title">EXPERIENCE</div>
     <div class="experience-item">
         <div class="institution">SAMSUNG R&D INSTITUTE INDONESIA</div>
-        <div class="location">Jakarta Raya, Indonesia</div>
+        <div class="location">Jakarta, Indonesia</div>
         <div class="clear"></div>
         <div class="position">AI Data Scientist</div>
         <div class="date">Feb 2024 - Present (1 yr 2 mos)</div>
         <div class="clear"></div>
         <ul>
-            <li>Speed up existing zig-zag path prediction algorithm by up to 10x faster using C++ and some optimization techniques. Used by Samsung Robot Cleaner devices.
-                <ul style="margin-top: 5px;">
-                    <li><em>Tools: C++, g++, and Makefile.</em></li>
-                </ul>
-            </li>
-            <li>Successfully build machine learning process that can correctly predict Samsung dryer user course behaviour based on previous washer courses by up to 85%.
-                <ul style="margin-top: 5px;">
-                    <li><em>Tools: SQL to preprocess data, PySpark to do feature engineering and modeling.</em></li>
-                </ul>
-            </li>
-            <li>Design A/B testing and create its dashboard visualization for Samsung Air conditioner and Washer.
-                <ul style="margin-top: 5px;">
-                    <li><em>Tools: Python, Java, and JavaScript.</em></li>
-                </ul>
-            </li>
+            <li>Speed up existing zig-zag path prediction algorithm by up to 10x faster using C++ and some optimization techniques. Used by Samsung Robot Cleaner devices.</li>
         </ul>
-        <strong>Skills:</strong> Artificial Intelligence (AI), Big Data Analytics and +11 skills
+        <div class="tools">Tools: C++, g++, and Makefile.</div>
+        <ul>
+            <li>Successfully build machine learning process that can correctly predict Samsung dryer user course behaviour based on previous washer courses by up to 85%.</li>
+        </ul>
+        <div class="tools">Tools: SQL, PySpark, Pandas, Scikit-Learn.</div>
+        <ul>
+            <li>Design A/B testing and create its dashboard visualization for Samsung Air conditioner and Washer.</li>
+        </ul>
+        <div class="tools">Tools: Python, Java, and JavaScript.</div>
     </div>
 
     <div class="experience-item">
@@ -140,17 +150,13 @@
             <li>Successfully built AI system that achieves >90% accuracy in predicting fatigue incidents inside heavy vehicles.</li>
             <li>Successfully developed AI system that reduces risks of accidents at least 10% by predicting workers inside critical areas and detect unsafe distances between heavy vehicles. Recognized by Ministry of Energy and Mineral Resources.</li>
             <li>Created statistical modeling and data visualizations for analyzing the company's data.</li>
-            <li>Created an automation system that makes possible from processing the input in form of excel to the output of a new excel file with the result of our model's detections.</li>
-            <li>Helped the data engineers to deploy the created models in the company's server.</li>
-            <li>Created visualizations and reports to supervisors and key users based on the result of the created model's detections.</li>
-            <li>Tools used: Python, OpenCV, Pytorch, labelImg, SQL, R, Tableau, Tensorflow, Tesseract.</li>
+            <li>These technologies are still used by the company until now due to the benefits for reducing safety risks.</li>
         </ul>
-        <strong>Skills:</strong> Data Analysis, Analytical Skills and +28 skills
+        <div class="tools">Tools used: Python, OpenCV, Pytorch, labelImg, SQL, R, Tableau, Tensorflow, Tesseract.</div>
     </div>
 
     <div class="experience-item">
         <div class="institution">UNIVERSITAS INDONESIA</div>
-        <div class="location"></div>
         <div class="clear"></div>
         <div class="position">Laboratory Assistant</div>
         <div class="date">Sep 2020 - Dec 2021 (1 yr 4 mos)</div>
@@ -160,24 +166,28 @@
             <li>Create the module and guideline so the students can learn R, Excel, and Python easily.</li>
             <li>Create assignments and quizzes to assess what students have learned regarding the material that is given.</li>
         </ul>
-        <strong>Skills:</strong> Communication, Programming and +3 skills
     </div>
 
-    <div class="experience-item">
-        <div class="institution">BANGKIT ACADEMY LED BY GOOGLE, TOKOPEDIA, GOJEK, & TRAVELOKA</div>
-        <div class="location"></div>
+    <div class="section-title">EDUCATION</div>
+    <div class="education-item">
+        <div class="institution">UNIVERSITAS INDONESIA</div>
+        <div class="date">Sep 2018 - June 2022</div>
         <div class="clear"></div>
-        <div class="position">Selected Participant of Machine Learning Path</div>
-        <div class="date">Jan 2021 - Jun 2021 (6 mos)</div>
+        <p>
+            Best university in Indonesia #QS World University and Times Higher Education (THE) 2025 Rankings.<br>
+            Statistics, Year 2018. Final GPA 3.52/4.00 (Top 10%, Cumlaude).<br>
+            Relevant Coursework: Data Mining, Probability and Statistics, Regression Analysis, etc.
+        </p>
+    </div>
+    <div class="education-item">
+        <div class="institution">BANGKIT ACADEMY LED BY GOOGLE, GOJEK, TOKOPEDIA, AND TRAVELOKA</div>
+        <div class="date">Jan 2021 - June 2021</div>
         <div class="clear"></div>
         <ul>
-            <li>Bangkit Academy is a massive training in both hard skill (machine learning) and soft skills (leadership, communication, etc) organized by Google, Gojek, Tokopedia, and Traveloka.</li>
-            <li>Accepted as 1 of the 3000 selected participants with a machine learning path from a total of nearly 40,000 applicants across the country.</li>
-            <li>Become Certified Google IT Automation with Python by Google, Mathematics for Machine Learning Specialization by Imperial College London, and TensorFlow Developer Professional Certificate by DeepLearning.AI.</li>
-            <li>Joined many insightful webinars related to soft skills, such as professional communication, adaptability, critical thinking, etc.</li>
-            <li>Got 93.88/100 or A grade.</li>
+            <li>Machine Learning Path. Grade "A" 93.88/100.</li>
+            <li>Certified Google Tensorflow Developer.</li>
+            <li>Relevant tools: Python, Tensorflow, OpenCV, Tesseract, Javascript.</li>
         </ul>
-        <strong>Skills:</strong> Communication, Programming and +3 skills
     </div>
 
     <div class="section-title">NOTABLE PROJECTS</div>
@@ -185,26 +195,25 @@
         <div class="position">LLaMA-2 Chatbot Javanese language (Basa Jawa)</div>
         <div class="clear"></div>
         <ul>
-            <li>Link project: <a href="https://github.com/ravialdy/llama2-javanese">https://github.com/ravialdy/llama2-javanese</a></li>
+            <li>Link project: <a href="https://github.com/ravialdy/llama2-javanese">github.com/ravialdy/llama2-javanese</a></li>
             <li>Translate english instruct OASST1 and OASST2 datasets into javanese language using NLLB model.</li>
             <li>Finetune LLaMA-2 to become a chatbot for basa Jawa with Multi-GPUs training.</li>
             <li>Utilize latest tools, such as DeepSpeed, TRL, and LORA PEFT to enable fast and efficient finetuning.</li>
             <li>Simple deployment of finetuned LLaMA-2 model with Flask.</li>
-            <li>Tools: DeepSpeed, TRL, LORA PEFT, Huggingface, NLLB, Flask.</li>
         </ul>
+        <div class="tools">Tools: DeepSpeed, TRL, LORA PEFT, Huggingface, NLLB, Flask.</div>
     </div>
 
     <div class="section-title">VOLUNTEERING</div>
     <div class="experience-item">
         <div class="institution">AICODING INDONESIA</div>
-        <div class="location"></div>
         <div class="clear"></div>
         <div class="position">Content Creator</div>
         <div class="date">Nov 2024 - Present (5 mos)</div>
         <div class="clear"></div>
         <ul>
             <li>Created YouTube channel 'AICoding Indonesia' where I share my knowledges related to AI, data science, and coding.</li>
-            <li>Link of my channel: <a href="https://youtube.com/@belajaraicoding?si=O2QmM8gnjPC0wlQa">https://youtube.com/@belajaraicoding?si=O2QmM8gnjPC0wlQa</a></li>
+            <li>Link of my channel: <a href="https://youtube.com/@belajaraicoding?si=O2QmM8gnjPC0wlQa">youtube.com/@belajaraicoding</a></li>
             <li>Successfully gained more than 100 subscribers where one of the video 'DeepSeek-R1 part 1' is viewed by more than 1000 people.</li>
             <li>All of the videos are 100% free and use Indonesian language.</li>
         </ul>
@@ -212,15 +221,17 @@
 
     <div class="section-title">RELATED INTERNATIONAL CERTIFICATION</div>
     <ul>
-        <li>IELTS Academic Official Score: 7.0 (Issued Jan 2024, Expires Dec 2026).</li>
-        <li>Certified Google Tensorflow Developer.</li>
-        <li>New TEPS Official Score: 376 developed by Seoul National University.</li>
+        <li>IELTS Academic Official Score: 7.0 (Issued Jan 2024, Expires 31 Dec 2025).</li>
     </ul>
 
     <div class="section-title">SKILLS & INTERESTS</div>
     <p>
-        <strong>Technical:</strong> Python, Java, C++, Javascript, PySpark, PyTorch, OpenCV, SQL, Scikit-Learn, R<br>
-        <strong>Interests:</strong> Machine Learning, Computer Vision, Natural Language Processing, Data Analysis & Analytics, Data Visualization, AI model deployments, and Project Management
+        <ul>
+            <strong>Technical:</strong> Python, Java, C++, Javascript, PySpark, PyTorch, OpenCV, SQL, Scikit-Learn, R<br>
+        </ul>
+        <ul>
+            <strong>Interests:</strong> Machine Learning, Computer Vision, Natural Language Processing, Data Analysis & Analytics, Data Visualization, AI model deployments, and Project Management
+        </ul>
     </p>
 
 </body>
